@@ -1,2 +1,5 @@
+doble :: Int -> Int
 doble x = 2 * x
-cuadruple x = 2 * doble
+
+cuadruple :: Int -> Int
+cuadruple = doble.doble
